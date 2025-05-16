@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone Store</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav>
+  <div class="logo">iPhoneX</div>
+  <div class="nav-links">
+    <a href="#modelos">Modelos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="burger">
+    <span><a href="#modelos"">Modelos</a></span>
+    <span><a href="#contacto">Contacto</a></span>
+    <span></span>
+  </div>
+</nav>
+
+
+  <!-- HERO -->
+  <section id="inicio" class="hero" >
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Descubrí el nuevo iPhone</h1>
+      <p>Experiencia futurista. Potencia sin límites.</p>
+      <a href="#modelos" class="btn-primary">Ver modelos</a>
+    </div>
+    <div class="hero-model">
+      <model-viewer
+        src="models/iphone16.glb"
+        alt="iPhone 15 Pro"
+        auto-rotate
+        camera-controls
+        interaction-prompt="none"
+        shadow-intensity="1"
+        exposure="1"
+        ar
+      ></model-viewer>
+    </div>
+  </div>
+</section>
+
+
+  <!-- MODELOS -->
+  <section id="modelos" class="series-section">
+  <h2 data-aos="fade-up">Elegí tu Serie de iPhone</h2>
+  <div class="series-grid">
+    <a href="pages/serie-16.html" class="series-card tilt-card" data-aos="fade-up">
+      <div class="glow"></div>
+      <div class="card-content">
+        <img src="images/iphone16-card.png" alt="">
+        <h3>Serie 16</h3>
+        <p>Iphone 16, Iphone 16 Pro, Iphone 16 Pro Max</p>
+      </div>
+    </a>
+    <a href="pages/serie-15.html" class="series-card tilt-card" data-aos="fade-up">
+      <div class="glow"></div>
+      <div class="card-content">
+        <img src="images/iphone15-card.png" alt="">
+        <h3>Serie 15</h3>
+        <p>Iphone 15, Iphone 15 Pro, Iphone 15 Pro Max</p>
+      </div>
+    </a>
+    <a href="pages/serie-14.html" class="series-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="glow"></div>
+      <div class="card-content">
+        <img src="images/iphone14-card.png" alt="">
+        <h3>Serie 14</h3>
+        <p>Iphone 14, Iphone 14 Pro, Iphone 14 Pro Max</p>
+      </div>
+    </a>
+    <a href="pages/serie-13.html" class="series-card tilt-card" data-aos="fade-up">
+      <div class="glow"></div>
+      <div class="card-content">
+        <img src="images/iphone13-card.png" alt="">
+        <h3>Serie 13</h3>
+        <p>Iphone 13, Iphone 13 Pro, Iphone 13 Pro Max</p>
+      </div>
+    </a>
+    <a href="pages/serie-12.html" class="series-card tilt-card" data-aos="fade-up">
+      <div class="glow"></div>
+      <div class="card-content">
+        <img src="images/iphone12-card.png" alt="">
+        <h3>Serie 12</h3>
+        <p>Iphone 12, Iphone 12 Pro, Iphone 12 Pro Max</p>
+      </div>
+    </a>
+    <a href="pages/serie-11.html" class="series-card tilt-card" data-aos="fade-up">
+      <div class="glow"></div>
+      <div class="card-content">
+        <img src="images/iphone11-card.png" alt="">
+        <h3>Serie 11</h3>
+        <p>Iphone 11, Iphone 11 Pro, Iphone 11 Pro Max</p>
+      </div>
+    </a>
+
+    <!-- ...otras cartas -->
+  </div>
+</section>
+
+
+   
+
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 iPhone Store. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!-- serie15.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iPhone Serie 13</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="../src/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>iPhone Serie 13</h1>
+    <p>Explorá lo último en tecnología Apple</p>
+  </header>
+
+  <section class="hero">
+    <model-viewer
+      src="../models/iphone-13-pro-max.glb"
+      alt="iPhone 15 Pro"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      ar
+      loading="eager">
+    </model-viewer>
+  </section>
+
+  <section class="models-grid">
+    <div class="model-card">
+      <h2 class="model-name">iPhone 15 Pro Max</h2>
+      <p class="colors">Colores: Titanio Azul, Titanio Blanco, Titanio Natural</p>
+      <a href="https://wa.me/?text=Hola, estoy interesado en el iPhone 15 Pro Max" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+    </div>
+
+    <div class="model-card">
+      <h2 class="model-name">iPhone 15 Pro</h2>
+      <p class="colors">Colores: Titanio Azul, Titanio Negro</p>
+      <a href="https://wa.me/?text=Hola, estoy interesado en el iPhone 15 Pro" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+    </div>
+
+    <div class="model-card">
+      <h2 class="model-name">iPhone 15</h2>
+      <p class="colors">Colores: Rosa, Amarillo, Verde, Azul, Negro</p>
+      <a href="https://wa.me/?text=Hola, estoy interesado en el iPhone 15" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+    </div>
+
+    <div class="model-card">
+      <h2 class="model-name">iPhone 15 Plus</h2>
+      <p class="colors">Colores: Rosa, Azul, Verde</p>
+      <a href="https://wa.me/?text=Hola, estoy interesado en el iPhone 15 Plus" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 iPhone Store — Todos los derechos reservados.
+  </footer>
+
+  <script src="../src/app.js"></script>
+</body>
+</html>
